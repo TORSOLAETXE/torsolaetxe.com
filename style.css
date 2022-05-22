@@ -6,6 +6,7 @@
   --black: rgba(0, 0, 0);
   --grey: rgba(90, 90, 90);
   --darkgrey: rgba(60, 60, 60);
+  --purple: rgb(115, 98, 211);
 }
 
 /* Style */
@@ -58,15 +59,8 @@ a {
   grid-column: col 1 / span 2;
 }
 
-.navbar-menu > a {
+.navbar-collapsible-menu > a {
   display: block;
-}
-
-#header {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .header {
@@ -74,6 +68,7 @@ a {
   flex-flow:column nowrap;
   padding: 1em;
   align-items: center;
+  justify-content: center;
   margin: auto;
 }
 
@@ -93,11 +88,11 @@ a {
   }
   
   .header--title {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
   
   .header--subtitle {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   }
 
@@ -132,11 +127,11 @@ a {
   transition: max-height 0.5s ease-out;
 }
 
-.navbar-menu {
+.navbar-collapsible-menu {
   grid-column: col 1 / span 2;
 }
 
-.navbar-menu--item {
+.navbar-collapsible-menu--item {
   color: var(--darkgrey);
   display: block;
   position: relative;
@@ -144,15 +139,74 @@ a {
   padding: 1em;
   margin-left: 2em;
   margin-right: 2em;
-  /* font-family: "Telefon Normal", "Telefon Normal", sans-serif; */
+  margin-bottom: 3px;
   font-size: 1em;
   text-decoration: none;
   cursor: pointer;
 }
 
-.navbar-menu--item:hover {
-  color: rgb(115, 98, 211);
+.navbar-collapsible-menu--item:hover {
+  color: var(--purple);
+  border-bottom: 3px solid var(--purple);
 } 
+
+#navbar--menu {
+  display: none;
+}
+
+@media only screen and (min-width: 1330px) { 
+  #nabvar--collapsible, #nabvar--menu-collapsible {
+    display: none;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: [col] 1fr [col] 2fr;
+    grid-template-rows: [row] auto;
+    position: relative;
+  }
+
+  .navbar-logo {
+    grid-column: col 1 / span 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    display: flex;
+    flex-flow:column nowrap;
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  .header--title > h1 {
+    font-size: 2em;
+  }
+  
+  .header--subtitle {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1em;
+  }
+
+  #navbar--menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    margin-right: 3em;
+  }
+
+  .menu--item {
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .menu--item:hover {
+    color: var(--purple);
+    border-bottom:3px solid var(--purple);
+  }
+}
 
 
 /* Main */
@@ -172,6 +226,7 @@ main {
 .main--image-category {
   height: 60vw;
   width: 60vw;
+  margin: 4px;
   max-height: 25em;
   max-width: 25em;
   overflow: hidden;
@@ -183,8 +238,9 @@ main {
 .main--image-category:hover {
   border-radius: 50%;
   border-style: solid;
-  border-color:rgb(115, 98, 211);
+  border-color:var(--purple);
   border-width: 4px;
+  margin: 0px;
 }
 
 .main--categories {
@@ -192,6 +248,13 @@ main {
   padding: 0.7em;
   text-align: center;
   color:black;
+  margin: 2px;
+}
+
+.main--categories:hover{
+  color: var(--purple);
+  border-bottom:2px solid var(--purple);
+  margin: 0px;
 }
 
 @media only screen and (min-width: 1330px) {
@@ -200,7 +263,12 @@ main {
     flex-flow: row nowrap;
     align-items: center;
     text-align: center;
+    justify-content: center;
     margin: 0 auto;
+    background-image: url(media/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .main--item {
@@ -216,6 +284,18 @@ main {
     overflow: hidden;
     border-radius: 50%;
     border-image: none;
+  }
+
+  .main--categories {
+    color: var(--white);
+    margin: 2px 0px;
+  }
+
+  .main--categories:hover{
+    color: var(--purple);
+    border-bottom:2px solid var(--purple);
+    margin-bottom: 0px;
+    margin-top: 2px;
   }
 }
 
@@ -252,8 +332,78 @@ section {
 }
 
 .section--contact-btn:hover {
-  border-color:rgb(115, 98, 211);
+  border-color:var(--purple);
 }
+
+.section--image {
+  display: none;
+}
+
+#separator{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-triangle{
+  margin: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.svg-triangle polygon {
+  fill: var(--black);
+  stroke: var(--black);
+  stroke-width: 2;
+}
+
+@media only screen and (min-width: 1330px) {
+  section {
+    margin: 0;
+  }
+  .section--content {
+    margin: 3em;
+  }
+  .section--image {
+    display: flex;
+    justify-content: center;
+    max-width: 50vw;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0;
+    object-fit: contain;
+  }
+
+  .section--image-class {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 48em;
+  }
+
+  #about, #astrology, #saama, #accompaniment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .margin-right {
+    margin-left: 3em;
+  }
+
+  .margin-left{
+    margin-left: -3em;
+  }
+
+}
+
+/* Contact form */
+
+#contact {
+  display: flex;
+  padding: 2em 0;
+  justify-content: center;
+}
+
 
 .contact-form {
   padding-left: 0;
@@ -279,7 +429,7 @@ section {
 }
 
 .field:focus{
-  border-color: rgb(115, 98, 211);
+  border-color: var(--purple);
   border-width: 0;
 }
 
@@ -296,7 +446,7 @@ section {
 } 
 
 .message-field:focus{
-  border-color: rgb(115, 98, 211);
+  border-color: var(--purple);
   border-width: 0;
 }
 
@@ -333,13 +483,16 @@ section {
 
 .submit-button:hover {
   cursor: pointer;
-  border-color: rgb(115, 98, 211);
-  color: rgb(115, 98, 211);
+  border-color: var(--purple);
+  color: var(--purple);
 }
 
 .submit-button-position {
   padding: 1em 0;
 }
+
+
+/* Footer */
 
 footer {
   display: flex;
@@ -365,7 +518,7 @@ footer {
 }
 
 .social-icons:hover {
-  fill: rgb(115, 98, 211);
+  fill: var(--purple);
 }
 
 .footer--copyright {
