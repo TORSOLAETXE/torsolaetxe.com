@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-2.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -28,21 +28,31 @@
             </div>
         </a>
         </div>
-        <div class="collapsible">
+
+        <div id="navbar--menu">
+            <a href='#about' class="menu--item">ABOUT ME</a>
+            <a href='#astrology' class="menu--item">ASTROLOGY</a>
+            <a href='#saama' class="menu--item">SAAMA</a>
+            <a href='#accompaniment' class="menu--item">ACCOMPANIMENT</a>
+            <a href='#contact' class="menu--item">CONTACT</a>
+        </div>
+
+        <div id="nabvar--collapsible" class="collapsible">
         <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
         </div>
 
-        <div class="nabvar-collapsible">
-        <div class="navbar-menu">
-            <a href='#about' class="navbar-menu--item">ABOUT ME</a>
-            <a href='#astrology' class="navbar-menu--item">ASTROLOGY</a>
-            <a href='#saama' class="navbar-menu--item">SAAMA</a>
-            <a href='#accompaniment' class="navbar-menu--item">ACCOMPANIMENT</a>
-            <a href='#contact' class="navbar-menu--item">CONTACT</a>
+        <div id="nabvar--menu-collapsible" class="nabvar-collapsible">
+        <div class="navbar-collapsible-menu">
+            <a href='#about' class="navbar-collapsible-menu--item">ABOUT ME</a>
+            <a href='#astrology' class="navbar-collapsible-menu--item">ASTROLOGY</a>
+            <a href='#saama' class="navbar-collapsible-menu--item">SAAMA</a>
+            <a href='#accompaniment' class="navbar-collapsible-menu--item">ACCOMPANIMENT</a>
+            <a href='#contact' class="navbar-collapsible-menu--item">CONTACT</a>
         </div>
         </div>
+
     </div>
 
     <main id="main" class='main'>
@@ -61,80 +71,113 @@
     </main>
 
     <section id='about'>
-        <h2 class='section--title'>ABOUT ME</h2>
-        <div class='section--text'>
-        I grew up in a home surrounded by mysticism and conscience, my father was and is, among other things, a great astrologer like his father and I suppose that growing up in this environment led me to take over from the two of them.  With their inspiration and the learnings of my later teachers, I integrated astrology as a language. Once you study it and learn to read it, you can interpret its codes.
+        <div class="section--content">
+            <h2 class='section--title'>ABOUT ME</h2>
+            <div class='section--text'>
+            I grew up in a home surrounded by mysticism and conscience, my father was and is, among other things, a great astrologer like his father and I suppose that growing up in this environment led me to take over from the two of them.  With their inspiration and the learnings of my later teachers, I integrated astrology as a language. Once you study it and learn to read it, you can interpret its codes.
+            </div>
         </div>
+        <div class="section--image">
+                <img src="media/about-me_desktop.jpg" alt="" class='section--image-class'></img>
+            </div>
     </section>
 
     <section id='astrology'>
-        <h2 class='section--title'>ASTROLOGY</h2>
-        <div class='section--text'>
-        The natal chart is one of my favorite tools, it is like a treasure map that your soul leaves you at the moment you are born and decide to incarnate in this human experience.
-        <br/>
-        <br/>
-        I like to see Astrology it as a train station.  Planetary alignments are like trains and you are the one who consciously or unconsciously decides to take those trains or not to lead you to your destiny.
+        <div class="section--image">
+                <img src="media/image-01_desktop.jpg" alt="" class='section--image-class'></img>
         </div>
-        <div class='section--price-pack'>
-        <h3>Services</h3>
-        <strong>ASTROLOGICAL CONSULTATION</strong> 1(h), includes:
-        <br/>
-        - Natal Chart Reading
-        <br/>
-        - Solar/Lunar Returns
-        <br/>
-        - Transits and Progressions
-        <br/>
-        Price: £80 
-        <br/>
-        <br/>
-        <strong>BASIC ASTROLOGY CLASSES</strong>:
-        <br/>
-        AC, Sun and Moon in the natal chart
-        <br/>
-        Price: £150
-        <br/>
-        <br/>
-        <strong>SATURNAL ASTROLOGY</strong>:
-        <br/>
-        Personalized manual of what your Natal Saturn asks of you, with each planet and each house with included calendar:
-        <br/>
-        Price: £600</div>
-        <div class="section--contact"><a href='#contact'><button class="section--contact-btn">Contact</button></a></div>
+        <div class="section--content">
+            <h2 class='section--title'>ASTROLOGY</h2>
+            <div class='section--text'>
+            The natal chart is one of my favorite tools, it is like a treasure map that your soul leaves you at the moment you are born and decide to incarnate in this human experience.
+            <br/>
+            <br/>
+            I like to see Astrology it as a train station.  Planetary alignments are like trains and you are the one who consciously or unconsciously decides to take those trains or not to lead you to your destiny.
+            </div>
+            <div class='section--price-pack'>
+            <h3>Services</h3>
+            <strong>ASTROLOGICAL CONSULTATION</strong> 1(h), includes:
+            <br/>
+            - Natal Chart Reading
+            <br/>
+            - Solar/Lunar Returns
+            <br/>
+            - Transits and Progressions
+            <br/>
+            Price: £80 
+            <br/>
+            <br/>
+            <strong>BASIC ASTROLOGY CLASSES</strong>:
+            <br/>
+            AC, Sun and Moon in the natal chart
+            <br/>
+            Price: £150
+            <br/>
+            <br/>
+            <strong>SATURNAL ASTROLOGY</strong>:
+            <br/>
+            Personalized manual of what your Natal Saturn asks of you, with each planet and each house with included calendar:
+            <br/>
+            Price: £600</div>
+            <div class="section--contact"><a href='#contact'><button class="section--contact-btn">Contact</button></a></div>
+        </div>
     </section>
 
     <section id='saama'>
-        <h2 class='section--title'>SAAMA: INTEGRAL UNLOCKING TECHNIQUE</h2>
-        <div class='section--text'>
-        Spirited Away is one of my favorite movies, I was always struck by the scene of the river god who appears in the bathhouse as a pestilent and filthy god who, thanks to everyone's help, manages to clean himself of all the garbage that he had been accumulating and from which he alone could not free himself.  I have been in that place and that is why this integral unlocking technique learned from the hand of Veturián Arana, I experience it precisely as that, an energetic spa.  Cleanse the emotional baggage, mental and even spiritual energies that we have accumulated over the years and that affect our psyche, including our physical body.  Reset, balance, calibrate, erase and integrate the energies that your soul needs most at this vital moment through binary questions and answers and quantum kinesiology.
+        <div class="section--content">
+            <h2 class='section--title'>SAAMA: INTEGRAL UNLOCKING TECHNIQUE</h2>
+            <div class='section--text'>
+            Spirited Away is one of my favorite movies, I was always struck by the scene of the river god who appears in the bathhouse as a pestilent and filthy god who, thanks to everyone's help, manages to clean himself of all the garbage that he had been accumulating and from which he alone could not free himself.  I have been in that place and that is why this integral unlocking technique learned from the hand of Veturián Arana, I experience it precisely as that, an energetic spa.  Cleanse the emotional baggage, mental and even spiritual energies that we have accumulated over the years and that affect our psyche, including our physical body.  Reset, balance, calibrate, erase and integrate the energies that your soul needs most at this vital moment through binary questions and answers and quantum kinesiology.
+            </div>
+            <div class='section--price-pack'>
+            <h3>Services</h3>
+            First time with SAAMA pack of three sessions (1h per session): 
+            <br/>
+            Price: £220
+            <br/>
+            <br/>
+            Subsequent sessions:
+            <br/>
+            Price: £80</div>
+            <div class="section--contact"><a href='#contact'><button class="section--contact-btn">Contact</button></a></div>
         </div>
-        <div class='section--price-pack'>
-        <h3>Services</h3>
-         First time with SAAMA pack of three sessions (1h per session): 
-         <br/>
-         Price: £220
-         <br/>
-         <br/>
-        Subsequent sessions:
-        <br/>
-        Price: £80</div>
-       <div class="section--contact"><a href='#contact'><button class="section--contact-btn">Contact</button></a></div>
+       <div class="section--image">
+            <img src="media/image-02_desktop.jpg" alt="" class='section--image-class'></img>
+        </div>
     </section>
 
     <section id='accompaniment'>
-        <h2 class='section--title'>ACCOMPANIMENT</h2>
-        <div class='section--text'>
-        Thanks to my Pluto in 10 (among other things) I love to see what is not perceived with the naked eye, I love the one to one accompanying my clients during their evolutionary processes by the hand of the natal chart, planetary transits, progressions, solar revolutions and lunar revolutions complementing it with SAAMA when necessary and like that acting as a lighthouse illuminating and giving perspective on the paths that open before us and helping to understand the knots where we get stuck, undoing them and thus giving us permission to move forward.
+        <div class="section--image">
+                <img src="media/image-03_desktop.jpg" alt="" class='section--image-class'></img>
         </div>
-        <div class='section--price-pack'>
-        <h3>Services</h3>
-         Accompaniment and follow-up through <strong>Astrology and SAAMA pack</strong> of four personalized sessions per month:
-         <br/>
-         Price: £340</div>
-         <div class="section--contact"><a href='#contact'><button class="section--contact-btn">Contact</button></a></div>
+        <div class="section--content">
+            <h2 class='section--title'>ACCOMPANIMENT</h2>
+            <div class='section--text'>
+            Thanks to my Pluto in 10 (among other things) I love to see what is not perceived with the naked eye, I love the one to one accompanying my clients during their evolutionary processes by the hand of the natal chart, planetary transits, progressions, solar revolutions and lunar revolutions complementing it with SAAMA when necessary and like that acting as a lighthouse illuminating and giving perspective on the paths that open before us and helping to understand the knots where we get stuck, undoing them and thus giving us permission to move forward.
+            </div>
+            <div class='section--price-pack'>
+            <h3>Services</h3>
+            Accompaniment and follow-up through <strong>Astrology and SAAMA pack</strong> of four personalized sessions per month:
+            <br/>
+            Price: £340</div>
+            <div class="section--contact"><a href='#contact'><button class="section--contact-btn">Contact</button></a></div>
+        </div>
     </section>
 
+
+
+    <div id="separator">
+        <svg class="svg-triangle" transform="translate(0,0)" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="0,100 2000,0 0,0"/>
+         </svg>
+        </div>
+
+
+
+
+
     <section id='contact'>
+        <div class="contact--center">
         <h2 class='section--title'>CONTACT ME</h2>
           <div class="contact-form">
           <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/DxwUmuq6JkzTUzjgYFYC" method="post" id="contact-form">
@@ -152,7 +195,8 @@
           <div class="grow-wrap" ><textarea name="message" class="message-field" id="message" rows="12" cols="100" placeholder="Message" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea></div>
             
         <div class="submit-button-position"><input class="submit-button" type="submit" value="Send"/></div>
-    </form>
+        </form>
+        </div>
   </div>
     </section>
 
