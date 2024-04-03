@@ -486,7 +486,8 @@ section {
 .submit-button:hover {
   cursor: pointer;
   border-color: var(--purple);
-  color: var(--purple);
+  color: white;
+  background: var(--purple);
 }
 
 .submit-button-position {
