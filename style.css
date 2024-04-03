@@ -332,7 +332,9 @@ section {
 }
 
 .section--contact-btn:hover {
-  border-color:var(--purple);
+  border-color: var(--purple);
+  color: white;
+  background: var(--purple);
 }
 
 .section--image {
